@@ -1,9 +1,2 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My Docker Web App</title>
-  </head>
-  <body>
-    <h1>Hello from Ahmed's Docker container!</h1>
-  </body>
-</html>
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html/index.html
